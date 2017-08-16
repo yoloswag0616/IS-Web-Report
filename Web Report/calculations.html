@@ -1,0 +1,882 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Calculations - House of Math</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Calculations - House of Math</h1>
+						<p>For your reference</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+					<nav id="nav">
+						<ul>
+							<li><a href="#terminology" class="active">Terminology</a></li>
+							<li><a href="#formulae">Formulae</a></li>
+							<li><a href="#slope45">45-degree slopes</a></li>
+							<li><a href="#slope30">30-degree slopes</a></li>
+							<li><a href="#slope60">60-degree slopes</a></li>
+							<li><a href="#dome">Dome</a></li>
+							<!--<li><a href="#cta">Further work</a></li>-->
+						</ul>
+					</nav>
+
+						<!-- Content -->
+							<section id="content" class="main">
+
+
+
+								<!--Terminology-->
+								<h2 style="padding-top: 1em; " id="terminology">Terminology</h2>
+								<p>
+								Here are the terms used in our calculations. You can click on the terms in the equations to check what they mean.
+								</p>
+								
+								<ul>
+									<li id="Fgrav">
+										Force of Gravity - Fgrav
+									</li>
+
+
+									<li id="Fparallel">
+										Force parallel to surface - Fparallel
+									</li>
+
+
+									<li id="Fnet">
+										Net force - Fnet
+									</li>
+
+
+									<li id="terminalVelocity">
+										Terminal Velocity - 
+										<i>
+											V
+											<sub>
+												t
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="angle">
+										Angle of slope - 𝜃
+									</li>
+
+
+									<li id="mass">
+										Mass of raindrop - 
+										<i>
+											m
+										</i>
+									</li>
+
+
+									<li id="distance">
+										Distance - 
+										<i>
+											D
+										</i>
+									</li>
+
+
+									<li id="finalDistance">
+										Final Distance - 
+										<i>
+											D
+											<sub>
+												f
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="acceleration">
+										Acceleration - 
+										<i>
+											a
+										</i>
+									</li>
+
+
+									<li id="totalTime">
+										Total time - 
+										<i>
+											T
+										</i>
+									</li>
+
+
+									<li id="timeTaken">
+										Time taken on roof - 
+										<i>
+											T
+											<sub>
+												t
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="initialTime">
+										Initial time - 
+										<i>
+											T
+											<sub>
+												i
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="remainingTime">
+										Remaining time - 
+										<i>
+											T
+											<sub>
+												r
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="velocity">
+										Velocity - 
+										<i>
+											V
+										</i>
+									</li>
+
+
+									<li id="finalVelocity">
+										Final Velocity- 
+										<i>
+											V
+											<sub>
+												f
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="initialVelocity">
+										Initial Velocity- 
+										<i>
+											V
+											<sub>
+												i
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="verticalMagnitude">
+										Vertical Magnitude - 
+										<i>
+											M
+											<sub>
+												v
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="horizontalMagnitude">
+										Horizontal Magnitude - 
+										<i>
+											M
+											<sub>
+												h
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="terminalVelocity">
+										Terminal Velocity - 
+										<i>
+											V
+											<sub>
+												t
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="remainingDistance">
+										Remaining Distance - 
+										<i>
+											D
+											<sub>
+												r
+											</sub>
+										</i>
+									</li>
+
+
+									<li id="height">
+										Height - 
+										<i>
+											h
+										</i>
+									</li>
+
+
+									<li id="angleDome">
+										Angle where water leaves dome - 
+										<i>
+											R
+										</i>
+									</li>
+
+
+									<li id="length">
+										Length of roof - 
+										<i>
+											l
+										</i>
+									</li>
+								</ul>
+
+
+
+								<!--Formulae-->
+								<h2 style="padding-top: 1em; " id="formulae">Formulae</h2>
+								<p>For your reference, these are the formulae used in our equations</p>
+								<ul>
+									<li>
+										<a href="#terminalVelocity">
+											m
+										</a>
+										 = density × volume
+									</li>
+
+
+									<li>
+										<a href="#terminology">
+											Fgrav
+										</a>
+										 = 
+										 <a href="#terminalVelocity">
+										 	m
+										 </a>
+
+										 <a href="#distance">
+										 	a
+										 </a>
+									</li>
+
+
+									<li>
+										<a href="#terminology">
+											Fparallel
+										</a>
+										 = 
+										<a href="#terminology">
+											Fgrav
+										</a>
+										 sin(
+										 <a href="#Fnet">
+										 	𝜃
+										 </a>
+										 )
+									</li>
+
+
+									<li>
+										<a href="#Fgrav">
+											Fnet
+										</a>
+										 = 
+										<a href="#terminology">
+											Fparallel
+										</a>
+											 ÷ 
+										 <a href="#terminalVelocity">
+										 	 m
+										 </a>
+									</li>
+
+
+									<li>
+										<a href="#acceleration">
+											<i>
+												T
+												<sub>
+													t
+												</sub>
+											</i>
+										</a>
+										 = √2
+										 <a href="#height">
+										 	<i>
+										 		l
+										 	</i>
+										 </a>
+									</li>
+
+
+									<li>
+										<a href="#remainingTime">
+											<i>
+												V
+												<sub>
+													f
+												</sub>
+											</i>
+										</a>
+										 = 
+										 <a href="#velocity">
+										 	<i>
+										 		V
+										 		<sub>
+										 			i
+										 		</sub>
+										 	</i>
+										 </a>
+										 + 
+										 <a href="#distance">
+										 	<i>
+										 		a
+										 	</i> 
+										 </a>
+										 <a>
+										 	<i>
+										 		T
+										 		<sub>
+										 			t
+										 		</sub>
+										 	</i>
+										 </a>
+									</li>
+
+
+									<li>
+										<a href="#verticalMagnitude">
+											<i>
+												V
+												<sub>
+													vert
+												</sub>
+											</i>
+										</a>
+										 = 
+										 <a href="#remainingTime">
+										 	<i>
+										 		V
+										 		<sub>
+										 			f
+										 		<sub>
+										 	</i>
+										 </a>
+										 cos(
+										 <a>
+										 𝜃
+										 </a>
+										 )
+									</li>
+
+
+									<li>
+										<a href="#initialVelocity">
+											<i>
+												V
+												<sub>
+													h
+												</sub>
+											</i>
+										</a>
+										 = 
+										<a href="#remainingTime">
+											<i>
+												V
+												<sub>
+													f
+												</sub>
+											</i>
+										</a>
+										  sin(
+										 <a href="#Fnet">
+										 	𝜃
+										 </a>
+										 )
+									</li>
+
+
+									<li>
+										<a href="#totalTime">
+											<i>
+												T
+												<sub>
+													i
+												</sub>
+											</i>
+										</a>
+										 = (
+										 <a href="#verticalMagnitude">
+										 	<i>
+										 		V
+										 		<sub>
+										 			t
+										 		</sub>
+										 	</i>
+										 </a>
+										  - 
+										 <a href="#remainingTime">
+										 	<i>
+										 		V
+										 		<sub>
+										 			f
+										 		</sub>
+										 	</i>
+										 </a>
+										  ) ÷ 
+										<a href="#distance">
+											<i>
+												a
+											</i>
+										</a>
+									</li>
+
+
+									<li>
+										<a href="#horizontalMagnitude">
+											<i>
+												D<sub>r</sub>
+											</i>
+										</a>
+										 = 
+										<a href="#terminalVelocity">
+											<i>
+												h
+											</i>
+										</a>
+										 - (
+										<a href="#finalVelocity">
+											<i>
+												M<sub>v</sub>
+											</i>
+										</a>
+
+										<a href="#totalTime">
+											<i>
+												T<sub>i</sub>
+											</i>
+										</a>
+										 + ½ 
+										<a href="#verticalMagnitude">
+											<i>
+												V<sub>t</sub>
+											</i>
+										</a>
+
+										<a href="#totalTime">
+											<i>
+												T<sub>i</sub>
+											</i>
+										</a>
+										<sup>
+											2
+										</sup>)
+									</li>
+
+
+									<li>
+										<a href="#timeTaken"><i>T<sub>r</sub></i></a> = <a href="#horizontalMagnitude"><i>D<sub>r</sub></i></a> ÷ <a href="#verticalMagnitude"><i>V<sub>t</sub></i></a>
+									</li>
+
+
+									<li>
+										<a href="#finalDistance"><i>T</i></a> = <a href="#totalTime"><i>T<sub>i</sub></i></a> + <a href="timeTaken"><i>T<sub>r</sub></i></a>
+									</li>
+
+
+									<li>
+										<a href="#mass">D<sub>f</sub></a> = <a href="#finalDistance">T</a> ÷ <a href="#initialVelocity">M<sub>h</sub></a>
+									</li>
+
+								</ul> 
+								<h2>General equations</h2>
+								<ol style="font-size:20px;">
+									<li>
+										<pre>
+m = 0.1g cm-3 × 0.113cm3
+  = 113mg
+  = 0.000113kg
+										</pre>
+									</li>
+									<li>
+										<pre>
+Fgrav = 0.000113kg × 9.8m/s2
+      =0.0011074N
+
+										</pre>
+									</li>
+								</ol>
+
+								<h2 style="padding-top: 1em; " id="slope45">45-degree slope</h2>
+								<ol style="font-size:20px;">
+									<li>
+										<pre>
+Fparallel = 0.0011074N×sin(45°)
+          = 0.00078305004N
+										</pre>
+									</li>
+									<li>
+										<pre>
+Fnet = 0.00078305004N ÷ 0.000113kg
+     ≈ 6.93m/s<sup>2</sup>
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>t</sub></i> = 1.2s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>f</sub></i> = 0 + 6.93m/s × 1.2s
+   = 8.316m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>M<sub>v</sub></i> = 8.316m/s cos(45°)
+   = 5.88m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>M<sub>h</sub></i> = 8.316m/s sin(45°)
+   = 5.88m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>i</sub></i> = (10m/s - 5.88m/s) ÷ 9.8m/s<sup>2</sup>
+   = 0.42s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>D<sub>r</sub></i> = 10 - (5.88m/s × 0.42s + ½ ×  9.8m/s<sup>2</sup> × 0.42s<sup>2</sup>)
+   = 6.67m
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>r</sub></i> = 6.67m ÷ 10m/s
+   ≈ 0.67s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T</i> = 0.42s + 0.67s
+  =1.09s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>D<sub>f</sub></i> = 1.09s ÷ 5.88m/s
+   = 6.41m
+										</pre>
+									</li>
+
+								</ol>
+
+								<h2 style="padding-top: 1em; " id="slope30">30-degree slope</h2>
+								<ol style="font-size:20px;">
+									<li>
+										<pre>
+Fparallel = 0.0011074N×sin(30°)
+          = 0.0005537N
+										</pre>
+									</li>
+									<li>
+										<pre>
+Fnet = 0.0005537N ÷ 0.000113kg
+     ≈ 4.9m/s2
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>t</sub></i> = 1.40s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>f</sub></i> = 0 + 4.9m/s<sup>2</sup> × 1.40s
+   = 6.86m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>vert</sub></i> = 6.86m/s cos(30°)
+   = 3.43m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>h</sub></i> = 8.316m/s sin(30°)
+   = 5.94m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>i</sub></i> = (10m/s - 3.43m/s) ÷ 9.8m/s2
+   = 0.67s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>D<sub>r</sub></i> = 10 - (3.43m/s × 0.67s + ½ ×  9.8m/s<sup>2</sup> × 0.67s<sup>2</sup>)
+   = 5.50m
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>r</sub></i> = 5.50m ÷ 10m/s
+   ≈ 0.55s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T</i> = 0.67s + 0.55s
+  =1.22s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>D<sub>f</sub></i> = 1.22s ÷ 5.94m/s
+   = 7.25m
+										</pre>
+									</li>
+
+								</ol>
+								<h2 style="padding-top: 1em; " id="slope60">60-degree slope</h2>
+								<ol style="font-size:20px;">
+									<li>
+										<pre>
+Fparallel = 0.0011074N×sin(60°)
+          = 0.00095903653N
+										</pre>
+									</li>
+									<li>
+										<pre>
+Fnet = 0.00095903653N ÷ 0.000113kg
+     ≈ 8.49m/s<sup>2</sup>
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>t</sub></i> = 1.18s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>f</sub></i> = 0 + 8.49m/s × 1.18s
+   = 10.0m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>vert</sub></i> = 10.0m/s cos(60°)
+   = 8.66m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>h</sub></i> = 10.0m/s sin(60°)
+   = 5m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>i</sub></i> = (10m/s - 8.66m/s) ÷ 9.8m/s<sup>2</sup>
+   = 0.14s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>D<sub>r</sub></i> = 10 - (8.66m/s × 0.14s + ½ ×  9.8m/s<sup>2</sup> × 0.14s<sup>2</sup>)
+   = 8.69m
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>r</sub></i> = 8.69m ÷ 10m/s
+   ≈ 0.87s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T</i> = 0.14s + 0.87s
+  =1.01s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>D<sub>f</sub></i> = 1.01s ÷ 5m/s
+   = 5.05m
+										</pre>
+									</li>
+
+								</ol>
+
+								<h2 style="padding-top: 1em; " id="dome">Dome</h2>
+								<ol style="font-size:20px;">
+									<li>
+										<pre>
+<i>R = m g [3 cos(𝛳<sub>d</sub>) - 2]</i>
+When R < 0, the droplet leaves the roof
+𝛳<sub>d</sub>=48.19°
+Back bearing - 21.81°
+										</pre>
+									</li>
+									<li>
+										<pre>
+Radius:
+5m = 1/2πr
+r = (5m × 2) ÷ π
+r ≈ 3.2m
+										</pre>
+									</li>
+									<li>
+										<pre>
+Fparallel = 0.0011074N×sin(21.81)
+          = 0.00041143219N
+										</pre>
+									</li>
+									<li>
+										<pre>
+Fnet = 0.00041143219N ÷ 0.000113kg
+     ≈ 3.64m/s<sup>2</sup>
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>t</sub></i> = 1.66s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>f</sub></i> = 0 + 3.64m/s<sup>2</sup> × 1.66s
+   = 6.04m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>vert</sub></i> = 6.04m/s cos(21.81)
+   = 5.61m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>V<sub>h</sub></i> = 6.04m/s sin(21.81)
+   = 2.24m/s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>i</sub></i> = (10m/s - 5.61m/s) ÷ 9.8m/s<sup>2</sup>
+   = 0.45s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>D<sub>r</sub></i> = 10 - (6.04m/s × 0.45s + ½ ×  9.8m/s<sup>2</sup> × 0.45s<sup>2</sup>)
+   = 6.29m
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T<sub>r</sub></i> = 6.29m ÷ 10m/s
+   ≈ 0.63s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>T</i> = 0.45s + 0.63s
+  =1.08s
+										</pre>
+									</li>
+									<li>
+										<pre>
+<i>D<sub>f</sub></i> = 1.08s ÷ 2.24m/s
+   = 2.42m
+										</pre>
+									</li>
+
+								</ol>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				
+					<footer id="footer">
+					<!--
+
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					-->
+					</footer>
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
